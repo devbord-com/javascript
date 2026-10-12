@@ -1,0 +1,23 @@
+{
+  "name": "@devbord/browser",
+  "version": "1.0.0",
+  "description": "Error tracking and performance for web apps, on devbord",
+  "license": "MIT",
+  "homepage": "https://devbord.com",
+  "repository": { "type": "git", "url": "git+https://github.com/devbord-com/javascript.git", "directory": "browser" },
+  "keywords": ["devbord", "error-tracking", "monitoring", "browser"],
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": { "types": "./index.d.ts", "default": "./index.js" },
+    "./package.json": "./package.json"
+  },
+  "main": "./index.js",
+  "module": "./index.js",
+  "types": "./index.d.ts",
+  "files": ["index.js", "index.d.ts"],
+  "dependencies": {
+    "@sentry/browser": "11.6.0"
+  },
+  "publishConfig": { "access": "public" }
+}
